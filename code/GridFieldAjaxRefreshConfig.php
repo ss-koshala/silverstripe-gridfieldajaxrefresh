@@ -5,6 +5,11 @@
  *
  * @package GridFieldAjaxRefresh
  */
+namespace GridFieldAjaxRefresh;
+
+use SilverStripe\Core\Config\Config;
+use SilverStripe\Core\Extension;
+
 class GridFieldAjaxRefresh_Base extends Extension
 {
 
@@ -12,8 +17,8 @@ class GridFieldAjaxRefresh_Base extends Extension
 	{
 		$this->owner->addComponent(
 			new GridFieldAjaxRefresh(
-				Config::inst()->get('GridFieldAjaxRefresh', 'auto_refresh_interval'),
-				Config::inst()->get('GridFieldAjaxRefresh', 'auto_refresh_enabled')
+				Config::inst()->get(GridFieldAjaxRefresh::class, 'auto_refresh_interval'),
+				Config::inst()->get(GridFieldAjaxRefresh::class, 'auto_refresh_enabled')
 			)
 		);
 	}
@@ -27,8 +32,8 @@ class GridFieldAjaxRefresh_RecordEditor extends Extension
 	{
 		$this->owner->addComponent(
 			new GridFieldAjaxRefresh(
-				Config::inst()->get('GridFieldAjaxRefresh', 'auto_refresh_interval'),
-				Config::inst()->get('GridFieldAjaxRefresh', 'auto_refresh_enabled')
+				Config::inst()->get(GridFieldAjaxRefresh::class, 'auto_refresh_interval'),
+				Config::inst()->get(GridFieldAjaxRefresh::class, 'auto_refresh_enabled')
 			)
 		);
 	}

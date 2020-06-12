@@ -1,13 +1,13 @@
 ---
 Name: gridfieldajaxrefresh
-Before: 'mysite/*'
+Before: 'app/*'
 After: 'framework/*','cms/*'
 ---
 
-GridFieldConfig_Base:
+SilverStripe\Forms\GridField\GridFieldConfig_Base:
   extensions:
-    - GridFieldAjaxRefresh_Base
+    - GridFieldAjaxRefresh\GridFieldAjaxRefresh_Base
 
-GridFieldConfig_RecordEditor:
+SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor:
   extensions:
-    - GridFieldAjaxRefresh_RecordEditor
+    - GridFieldAjaxRefresh\GridFieldAjaxRefresh_RecordEditor

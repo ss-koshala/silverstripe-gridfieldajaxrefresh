@@ -6,6 +6,13 @@
  *
  * @package GridFieldAjaxRefresh
  */
+namespace GridFieldAjaxRefresh;
+
+use SilverStripe\Forms\GridField\GridField;
+use SilverStripe\Forms\GridField\GridField_HTMLProvider;
+use SilverStripe\View\ArrayData;
+use SilverStripe\View\Requirements;
+
 class GridFieldAjaxRefresh implements GridField_HTMLProvider
 {
 

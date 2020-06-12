@@ -1,7 +1,7 @@
 {
 	"name": "silverstripe/gridfieldajaxrefresh",
 	"description": "Adds the ability to either automatically or manually refresh a SilverStripe GridField",
-	"type": "silverstripe-module",
+	"type": "silverstripe-vendormodule",
 	"keywords": ["silverstripe", "gridfield", "ajax", "refresh", "auto-refresh", "automatic"],
 	"license": "BSD-3-Clause",
     "minimum-stability": "dev",
@@ -13,6 +13,6 @@
 	],
 	"require":
 	{
-		"silverstripe/framework": "^3.0"
+		"silverstripe/framework": "^4.0"
 	}
 }
